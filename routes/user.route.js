@@ -27,7 +27,7 @@ userRouter.post("/register", async (req, res) => {
         from: "cristobal.kertzmann@ethereal.email", // sender address
         to: email, // list of receivers
         subject: "Email verification for Bolo Chat App", // Subject line
-        text: `Hey user please click on link to verify:- ${process.env.link}/user/verify/${user._id}`, // plain text body
+        text: `Hey user please click on link to verify:- https://sss-oz95.onrender.com/user/verify/${user._id}`, // plain text body
         html: "Thanks for being here", // html body
       });
       res.send({ message: "Link send to email id" });
