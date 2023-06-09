@@ -62,7 +62,7 @@ userRouter.post("/login", async (req, res) => {
         res.send("Wrong Credentials");
       } else if (result) {
         const token = jwt.sign({ userId: user._id }, "secret");
-        res.send({ message: "Logged in successfully", token });
+        res.send({ message: "Logged in successfully", token, user });
       }
     });
   } catch (error) {
