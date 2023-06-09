@@ -35,6 +35,7 @@ userRouter.post("/register", async (req, res) => {
   } catch (error) {
     res.send({ message: error });
   }
+  //
 });
 
 userRouter.get("/verify/:id", async (req, res) => {
